@@ -39,7 +39,7 @@ headerLogoConatiner.addEventListener('click', () => {
 
 
 // Specify the URL of the PDF file
-const pdfUrl = 'assets/pdf/Chinmay_Resume.pdf';
+const pdfUrl = 'assets/pdf/Chinmay_Nivsarkar_Resume.pdf';
 
 // Specify the element where PDF will be rendered
 const pdfViewer = document.getElementById('pdfviewer');
