@@ -44,36 +44,22 @@ const pdfUrl = 'assets/pdf/Chinmay_Nivsarkar_Resume.pdf';
 // Specify the element where PDF will be rendered
 const pdfViewer = document.getElementById('pdfviewer');
 
-// PDF.js script
 const pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
 
 // Asynchronous function to fetch and render the PDF
-async function renderPdfAsImages(url) {
+async function renderPdf(url) {
     const loadingTask = pdfjsLib.getDocument(url);
-    const pdf = await loadingTask.promise;
+    const pdfDocument = await loadingTask.promise;
     
-    // Loop through each page
-    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-        const page = await pdf.getPage(pageNum);
-        const viewport = page.getViewport({ scale: 1.5 });
-
-        // Prepare canvas element for rendering
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        // Render PDF page to canvas
-        await page.render({ canvasContext: context, viewport }).promise;
-
-        // Convert canvas to image and append to viewer div
-        const img = new Image();
-        img.src = canvas.toDataURL();
-        pdfViewer.appendChild(img);
-    }
+    // Render PDF document
+    const viewerContainer = document.getElementById('pdfViewer');
+    const pdfViewer = new pdfjsViewer.PDFViewer({
+        container: viewerContainer
+    });
+    pdfViewer.setDocument(pdfDocument);
 }
 
-// Call the function to render PDF as images
-renderPdfAsImages(pdfUrl);
+// Call the function to render the PDF
+renderPdf(pdfUrl);
