@@ -42,10 +42,10 @@
               <a href="./index.html#projects" class="header__link">
                 Projects
               </a>
-            </li> -->
+            </li> 
             <li class="header__link-wrapper">
               <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
+            </li>-->
           </ul>
           <div class="header__main-ham-menu-cont">
             <img
@@ -74,11 +74,11 @@
 
             <!-- <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
-            </li> -->
+            </li> 
 
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -88,7 +88,7 @@
         <h1 class="heading-primary">Hi! My name is Chinmay Nivsarkar</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            Currently looking for roles in the Data Engineering, Artificial Intelligence, and Machine Learning space.
+            I'm a Data Engineer by trade, currently looking at roles in the Artificial Intelligence, and Machine Learning space.
           </p>
         </div>
         <!-- <div class="home-hero__cta">
@@ -97,7 +97,7 @@
       </div>
       <div class="home-hero__socials">
         <div class="home-hero__social">
-          <a href="http://linkedin.com/in/chinmay-nivsarkar" class="home-hero__social-icon-link">
+          <a href="http://linkedin.com/in/chinmay-nivsarkar" target="_blank" class="home-hero__social-icon-link">
             <img
               src="./assets/png/linkedin-ico.png"
               alt="icon"
@@ -106,7 +106,7 @@
           </a>
         </div>
         <div class="home-hero__social">
-          <a href="http://github.com/chinmay-n" class="home-hero__social-icon-link">
+          <a href="http://github.com/chinmay-n" target="_blank" class="home-hero__social-icon-link">
             <img
               src="./assets/png/github-ico.png"
               alt="icon"
@@ -133,9 +133,7 @@
           </a>
         </div> -->
         <div class="home-hero__social">
-          <a
-            href="https://www.instagram.com/chinmaynivsarkar"
-            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          <a href="https://www.instagram.com/chinmaynivsarkar" target="_blank" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
           >
             <img
               src="./assets/png/insta-ico.png"
@@ -158,26 +156,36 @@
           </span>
         </h2>
         <div class="about__content">
+          <style>
+            .rounded-image {
+                height: 75%;
+                width: 75%;
+                border-radius: 50%; /* Makes the image round */
+                object-fit: cover; /* Ensures the image covers the entire area without stretching */
+            }
+        </style>
+            <img
+              src="./assets/jpeg/fullsize.jpeg"
+              alt="Chinmay Nivsarkar Logo Image"
+              class="rounded-image"
+            />
           <div class="about__content-main">
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Hey! It's
                 <strong>Chinmay Nivsarkar</strong>
-                and I'm a <strong> Data Engineer </strong> located in
-                Jersey City. I've delivered numerous Data solutions with 
-                both on-prem, and cloud technologies. 
+                and I'm a <strong> Data Engineer </strong>currently located in
+                Jersey City. I love finding efficient solutions to really niche problems. Outside of work, I spend my time trying to read, cook, and play videogames.
               </p>
               <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
+                After spending four years delivering various key data solutions at Shell, I moved to NYC in 2022 to pursue a Master's from NYU. During my time here, I also interned with Siemens Healthineers, and worked on building AI solutions to some very interesting problems.
+                I'm now trying to put my degree to good use, and looking for ways back on the workforce, bringing to the table my strong data foundations, excellent work ethic, and newly minted AI/ML skills.
+                You can learn more about the kind of work I did <a href="assets/pdf/Chinmay_Nivsarkar_Resume.pdf" target="_blank"><strong>here</strong></a>.
               </p>
+              <p class="about__content-details-para"> If you'd like to have a chat and discuss, please shoot me an <a href="mailto:chinmay.nivsarkar@nyu.edu"><strong>email</strong></a>!</p>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
+            <!--<a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>-->
           </div>
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
@@ -188,6 +196,7 @@
               <div class="skills__skill">C</div>
               <div class="skills__skill">Shell Scripting</div>
               <div class="skills__skill">Git</div>
+              <div class="skills__skill">CI/CD</div>
               <div class="skills__skill">SQL</div>
               <div class="skills__skill">NoSQL</div>
               <div class="skills__skill">ETL</div>
@@ -196,6 +205,7 @@
               <div class="skills__skill">Deep Learning</div>
               <div class="skills__skill">NLP</div>
               <div class="skills__skill">SAP</div>
+              <div class="skills__skill">REST APIs</div>
               <div class="skills__skill">Azure Data Factory</div>
               <div class="skills__skill">Databricks</div>
               <div class="skills__skill">Microsoft Power BI</div>
@@ -205,6 +215,7 @@
         </div>
       </div>
     </section>
+    <!--
     <section id="Resume" class="projects sec-pad dynamicBg">
     </section> 
     <div class="main-container">
@@ -220,7 +231,7 @@
         </div>
     </div>
     </section>
-    <!-- <section id="projects" class="projects sec-pad">
+     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
@@ -305,7 +316,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section> 
     <section id="contact" class="contact sec-pad dynamicBgClr">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -357,7 +368,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section>-->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -366,35 +377,21 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="http://linkedin.com/in/chinmay-nivsarkar">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="http://github.com/chinmay-n">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <!-- <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a> -->
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/chinmaynivsarkar">
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
@@ -411,13 +408,6 @@
           </div>
         </div>
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          Template by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
 
